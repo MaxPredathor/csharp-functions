@@ -40,7 +40,13 @@
                 return somma;
             }
 
-            //int[] myArray = [2, 6, 7, 5, 3, 9];
+            int[] testArray = [2, 6, 7, 5, 3, 9];
+
+            StampaArray(testArray);
+            StampaArray(ElevaArrayAlQuadrato(testArray));
+            StampaArray(testArray);
+            Console.WriteLine(sommaElementiArray(testArray));
+            Console.WriteLine(sommaElementiArray(ElevaArrayAlQuadrato(testArray)));
 
             Console.WriteLine("Inserisci quanto lungo deve essere l'Array");
             int[] myArray = new int[Convert.ToInt32(Console.ReadLine())];
@@ -49,7 +55,6 @@
                 Console.WriteLine($"Inserire il valore numero {i + 1}");
                 myArray[i] = Convert.ToInt32(Console.ReadLine());
             }
-
             StampaArray(myArray);
             StampaArray(ElevaArrayAlQuadrato(myArray));
             StampaArray(myArray);
